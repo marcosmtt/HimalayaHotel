@@ -30,8 +30,36 @@
     </header>
 
     <div class="container">
-      <div id="slider">
-        
+
+
+      <div class="slider">
+        <input type="radio" name="images" id="im1" checked>
+        <input type="radio" name="images" id="im2">
+        <input type="radio" name="images" id="im3">
+
+        <div class="sliderImages" id="imgOne">
+          <img src="_images/nepalHotel.jpg" alt="NepalHotel">
+          <label for="im3" class="pre"></label>
+          <label for="im2" class="next"></label>
+        </div>
+
+        <div class="sliderImages" id="imgTwo">
+          <img src="_images/nepalMountain.jpg" alt="NepalMountain">
+          <label for="im1" class="pre"></label>
+          <label for="im3" class="next"></label>
+        </div>
+
+        <div class="sliderImages" id="imgThree">
+          <img src="_images/nepalTown.jpg" alt="NepalTown">
+          <label for="im2" class="pre"></label>
+          <label for="im1" class="next"></label>
+        </div>
+
+        <div class="nav">
+          <label class="dots" id="dot1" for="im1"></label>
+          <label class="dots" id="dot2" for="im2"></label>
+          <label class="dots" id="dot3" for="im3"></label>
+        </div>
       </div>
 
     </div>
