@@ -33,6 +33,7 @@
 
 
       <div class="slider">
+
         <input type="radio" name="images" id="im1" checked>
         <input type="radio" name="images" id="im2">
         <input type="radio" name="images" id="im3">

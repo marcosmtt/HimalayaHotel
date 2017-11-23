@@ -50,13 +50,14 @@
 }
 
 .dots {
-  top: -5px;
-  width: 10px;
-  height: 10px;
+  top: -50%;
+  left: 46%;
+  width: 12px;
+  height: 12px;
   margin: 0 4px;
   position: relative;
   border-radius: 50%;
-  display: inline-block;
+  display:  inline-block;
   background: rgba(0, 0, 0, .4);
 }
 
