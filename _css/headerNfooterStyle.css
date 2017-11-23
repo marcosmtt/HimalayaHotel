@@ -1,39 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
-* {
-margin: 0;
-padding: 0;
-}
-body {
-  font-family: 'Oswald', sans-serif;
-}
-
 /*
 Header
 */
+
+.header {
+  background-color: white;
+}
 
 #headerList {
   color: #000;
   list-style: none;
   text-align: center;
   padding: 0 400px 10px 0;
-
 }
 
-#headerList > li {
+#headerList>li {
   text-align: center;
   display: inline-block;
   padding: 10px 25px 0 10px;
 }
 
-#headerList > li > a {
+#headerList>li>a {
   text-decoration: none;
   color: #000;
   font-size: 20px;
 }
 
-#headerList > li > a:hover {
- color: #c1c1c1;
+#headerList>li>a:hover {
+  color: #c1c1c1;
 }
 
 #logo {
@@ -47,5 +40,17 @@ Header
 /*
 Footer
 */
+
 .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  text-align: center;
+}
+
+.footer>p {
 }

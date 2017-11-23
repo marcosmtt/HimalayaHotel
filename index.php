@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Himalaya Hotel</title>
     <link rel="stylesheet" href="_css/headerNfooterStyle.css">
+    <link rel="stylesheet" href="_css/master.css">
+    <link rel="stylesheet" href="_css/slider.css">
   </head>
   <body>
     <header class="header">
@@ -28,10 +30,14 @@
     </header>
 
     <div class="container">
-<h1>Body main</h1>
-    </div>
-<footer class="footer">
+      <div id="slider">
+        
+      </div>
 
+    </div>
+
+<footer class="footer">
+<p>Website Developed by Marcos Motta</p>
 </footer>
   </body>
 </html>
