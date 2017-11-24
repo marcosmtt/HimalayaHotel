@@ -127,7 +127,6 @@ Página Cadastro
   transition-duration: 0.2s;
 }
 
-
 .finishButton:hover {
   background-color: #7CBF70;
 }
@@ -135,44 +134,53 @@ Página Cadastro
 /*
 Guest Banner
 */
+
 .guestBanner {
   display: inline-block;
-  position:absolute;
+  position: absolute;
   right: 200px;
 }
+
 #guestBanner {
   display: inline-block;
   position: relative;
   width: 300px;
 }
 
-
 /*
 Página Quartos
 */
 
-.tabelaQuartos{
+.tabelaQuartos {
   position: fixed;
   left: 28%;
   top: 10%;
 }
+
 .tabelaQuartos {
   color: black;
 }
 
 .tabelaQuartos td, .tabelaQuartos th {
-    padding: 8px;
+  padding: 8px;
 }
 
-.tabelaQuartos tr:nth-child(even){background-color: #eee;}
-.tabelaQuartos tr:nth-child(odd){background-color: #c5c5c5;}
+.tabelaQuartos tr:nth-child(even) {
+  background-color: #eee;
+}
 
-.tabelaQuartos tr:hover {background-color: #fff;}
+.tabelaQuartos tr:nth-child(odd) {
+  background-color: #c5c5c5;
+}
+
+.tabelaQuartos tr:hover {
+  background-color: #fff;
+}
 
 .tabelaQuartos th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #0099e6;
-    color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0099e6;
+  color: white;
 }

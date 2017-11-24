@@ -30,7 +30,8 @@
 
       <div class="guestInfo">
         <h1>CADASTRO DE HÓSPEDES</h1>
-        <form class="" action="index.html" method="post">
+
+        <form class="" action="cadastro.php" method="post">
           <div class="name">
             <h4>Nome Completo</h4>
             <input type="text" name="Nome" id="nomeInput">
@@ -47,7 +48,7 @@
             <h4>Dias de hospedagem</h4>
             <input type="number" name="numeroDias" id="diasInput">
           </div>
-          <button type="button" name="button" class="finishButton">HOSPEDAR</button>
+          <button type="submit" name="button" class="finishButton">HOSPEDAR</button>
         </form>
       </div>
       <div class="guestBanner">
@@ -56,7 +57,19 @@
 
     </div>
 
+    <?php
 
+    if( $_SERVER['REQUEST_METHOD'] == 'POST'){
+  var_dump($_POST);
+  $name = $_POST["Nome"];
+  $cpf = $_POST["Cpf"];
+  $numHospedes = $_POST["numeroHospedes"];
+  $numDias = $_POST["numeroDias"];
+  
+
+}
+
+    ?>
 
     <footer class="footer">
     <p>Website Developed by Marcos Motta</p>

@@ -36,38 +36,6 @@
           <th>Diárias</th>
           <th>Valor Total</th>
         </tr>
-        <tr>
-          <td>205</td>
-          <td>Marcos Motta</td>
-          <td>038.856.720.14</td>
-          <td>2</td>
-          <td>7</td>
-          <td>560,75</td>
-        </tr>
-        <tr>
-          <td>205</td>
-          <td>Marcos Motta</td>
-          <td>038.856.720.14</td>
-          <td>2</td>
-          <td>7</td>
-          <td>560,75</td>
-        </tr>
-        <tr>
-          <td>205</td>
-          <td>Marcos Motta</td>
-          <td>038.856.720.14</td>
-          <td>2</td>
-          <td>7</td>
-          <td>560,75</td>
-        </tr>
-        <tr>
-          <td>205</td>
-          <td>Marcos Motta</td>
-          <td>038.856.720.14</td>
-          <td>2</td>
-          <td>7</td>
-          <td>560,75</td>
-        </tr>
       </table>
     </div>
 
