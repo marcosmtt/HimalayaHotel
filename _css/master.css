@@ -7,5 +7,60 @@ padding: 0;
 
 body {
   font-family: 'Oswald', sans-serif;
-  background: #e6eeff ;
+  background: #0d1a26;
+}
+
+/*
+Header
+*/
+
+.header {
+  background-color: white;
+}
+
+#headerList {
+  color: #000;
+  list-style: none;
+  text-align: center;
+  padding-right: 19%;
+  padding-bottom: 12px;
+}
+
+#headerList>li {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 50px 0 10px;
+}
+
+#headerList>li>a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+#headerList>li>a:hover {
+  color: #c1c1c1;
+}
+
+#logo {
+  float: left;
+  padding-left: 230px;
+  max-height: 50px;
+  height: 50px;
+  width: auto;
+}
+
+/*
+Footer
+*/
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  text-align: center;
 }

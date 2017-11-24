@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Himalaya Hotel</title>
-    <link rel="stylesheet" href="_css/headerNfooterStyle.css">
     <link rel="stylesheet" href="_css/master.css">
     <link rel="stylesheet" href="_css/slider.css">
   </head>
