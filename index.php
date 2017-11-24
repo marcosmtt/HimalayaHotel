@@ -19,9 +19,9 @@
           </div>
 
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">Cadastro</a></li>
-          <li><a href="#">Quartos</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="_php/cadastro.php">Cadastro</a></li>
+          <li><a href="_php/quartos.php">Quartos</a></li>
+          <li><a href="_php/sobre.php">Sobre</a></li>
 
         </ul>
       </div>

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -63,4 +62,117 @@ Footer
   background-color: white;
   text-align: center;
   text-align: center;
+}
+
+/*
+Página Cadastro
+*/
+
+.guestInfo {
+  margin: 230px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: 0;
+  padding-bottom: 20%;
+  background: #264d73;
+}
+
+.guestInfo>h1, h4 {
+  color: #ccc;
+}
+
+.guestInfo>h1 {
+  padding: 10px 20px;
+  position: relative;
+}
+
+.name, .numHospedes, .numDias {
+  display: inline-block;
+  position: relative;
+  margin-left: 22px;
+}
+
+.numDias {
+  margin-top: 12px;
+}
+
+.cpf {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#nomeInput, #cpfInput, #hospedesInput, #diasInput {
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.finishButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  bottom: 10px;
+  right: 10px;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+
+.finishButton:hover {
+  background-color: #7CBF70;
+}
+
+/*
+Guest Banner
+*/
+.guestBanner {
+  display: inline-block;
+  position:absolute;
+  right: 200px;
+}
+#guestBanner {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+}
+
+
+/*
+Página Quartos
+*/
+
+.tabelaQuartos{
+  position: fixed;
+  left: 28%;
+  top: 10%;
+}
+.tabelaQuartos {
+  color: black;
+}
+
+.tabelaQuartos td, .tabelaQuartos th {
+    padding: 8px;
+}
+
+.tabelaQuartos tr:nth-child(even){background-color: #eee;}
+.tabelaQuartos tr:nth-child(odd){background-color: #c5c5c5;}
+
+.tabelaQuartos tr:hover {background-color: #fff;}
+
+.tabelaQuartos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0099e6;
+    color: white;
 }
