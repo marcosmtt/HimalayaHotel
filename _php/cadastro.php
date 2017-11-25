@@ -31,7 +31,7 @@
       <div class="guestInfo">
         <h1>CADASTRO DE HÓSPEDES</h1>
 
-        <form class="" action="cadastro.php" method="post">
+        <form class="registerForm" action="cadastro.php" method="post">
           <div class="name">
             <h4>Nome Completo</h4>
             <input type="text" name="Nome" id="nomeInput">

@@ -40,11 +40,14 @@
           </tr>
         </thead>
       <tbody>
-    </div>
+
+
+
 
     <footer class="footer">
     <p>Website Developed by Marcos Motta</p>
     </footer>
+
 
 <?php
 
@@ -78,7 +81,7 @@
       echo "<td>" .$numHospedes. "</td>";
       echo "<td>" .$numDias. "</td>";
       echo "<td>" .$valor. "</td>";
-      echo '<td><a href="#">Alterar</a></td>';
+      echo '<td><a href="#">Editar</a></td>';
       echo '<td><a href="#">Excluir</a></td></tr>';
 
     }
@@ -89,5 +92,6 @@
 
  ?>
 
+<script type="text/javascript"> src="../_javascript/functions.js"></script>
   </body>
 </html>
