@@ -61,11 +61,34 @@
 
     if( $_SERVER['REQUEST_METHOD'] == 'POST'){
   var_dump($_POST);
+
   $name = $_POST["Nome"];
   $cpf = $_POST["Cpf"];
   $numHospedes = $_POST["numeroHospedes"];
   $numDias = $_POST["numeroDias"];
-  
+  $valorDiaria = 95.50;
+  $valorTotal = ($valorDiaria * $numHospedes) * $numDias;
+
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "hotel";
+
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  $sql = "INSERT INTO hospede (nome, cpf, numero_de_Hospedes, numero_de_Dias, valor)
+  VALUES ('$name', '$cpf', $numHospedes, $numDias, $valorTotal)";
+
+  if ($conn->query($sql) === TRUE) {
+    echo "Hóspede(s) Cadastrado(s)!";
+   } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+
+  $conn->close();
 
 }
 
