@@ -36,6 +36,7 @@
             <th>Número de Hóspedes</th>
             <th>Diárias</th>
             <th>Valor Total</th>
+            <th colspan="2">Ação</th>
           </tr>
         </thead>
       <tbody>
@@ -76,7 +77,9 @@
       echo "<td>" .$cpf. "</td>";
       echo "<td>" .$numHospedes. "</td>";
       echo "<td>" .$numDias. "</td>";
-      echo "<td>" .$valor. "</td></tr>";
+      echo "<td>" .$valor. "</td>";
+      echo '<td><a href="#">Alterar</a></td>';
+      echo '<td><a href="#">Excluir</a></td></tr>';
 
     }
     echo "</tbody></tabel>";

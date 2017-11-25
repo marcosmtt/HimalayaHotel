@@ -60,7 +60,7 @@
     <?php
 
     if( $_SERVER['REQUEST_METHOD'] == 'POST'){
-    
+
       $name = $_POST["Nome"];
       $cpf = $_POST["Cpf"];
       $numHospedes = $_POST["numeroHospedes"];
