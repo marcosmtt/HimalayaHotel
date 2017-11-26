@@ -51,16 +51,7 @@
 
 <?php
 
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "hotel";
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
-
-  if ($conn->connect_error) {
-    die("Connectoin failed:" . $conn->connect_error);
-  }
+  include "config.php";
 
   $sql = "SELECT * FROM hospede";
   $result = $conn->query($sql);
@@ -81,17 +72,20 @@
       echo "<td>" .$numHospedes. "</td>";
       echo "<td>" .$numDias. "</td>";
       echo "<td>" .$valor. "</td>";
-      echo '<td><a href="#">Editar</a></td>';
-      echo '<td><a href="#">Excluir</a></td></tr>';
+      echo '<td><a href="edit.php?numeroQuarto='.$row["numeroQuarto"].' ">Editar</a></td>';
+      echo '<td><a href="quartos.php?delete='.$row["numeroQuarto"].'">Excluir</a></td></tr>';
 
     }
-    echo "</tbody></tabel>";
+    echo "</tbody></table>";
+  }
+
+
+  if(isset($_GET['delete'])){
+    $sql = "DELETE FROM hospede WHERE numeroQuarto =".$_GET['delete'];
+    $sql = mysqli_query($conn, $sql);
   }
 
   $conn->close();
-
  ?>
-
-<script type="text/javascript"> src="../_javascript/functions.js"></script>
   </body>
 </html>
