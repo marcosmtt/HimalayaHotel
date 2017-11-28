@@ -83,7 +83,6 @@
               echo '<td><a href="edit.php?numeroQuarto='.$row["numeroQuarto"].' ">Editar</a></td>';
               echo '<td><a href="quartos.php?delete='.$row["numeroQuarto"].'">Excluir</a></td></tr>';
               echo "</tbody></table>";
-              echo "<button type="input";
     }
 
   } else {
