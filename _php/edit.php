@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -27,17 +26,7 @@
 
         <?php
 
-
-          $servername = "localhost";
-          $username = "root";
-          $password = "";
-          $dbname = "hotel";
-
-          $conn = new mysqli($servername, $username, $password, $dbname);
-          if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-
-          }
+          include "config.php";
 
             if( $_SERVER['REQUEST_METHOD'] == 'GET'){
 

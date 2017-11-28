@@ -41,8 +41,13 @@
         </thead>
       <tbody>
 
-
-
+        <form class="searcherForm" action="quartos.php" method="post">
+        <div class="searcher">
+          <h4>Filtrar</h4>
+          <input type="text" name="searcher" value="" placeholder="Nome do hóspede">
+          <button type="submit" id="submitBtn" name="srchButton" value="filter">Pesquisar</button>
+        </div>
+      </form>
 
     <footer class="footer">
     <p>Website Developed by Marcos Motta</p>
@@ -53,12 +58,15 @@
 
   include "config.php";
 
-  $sql = "SELECT * FROM hospede";
-  $result = $conn->query($sql);
 
-  if ($result->num_rows > 0) {
+  if( $_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $filterValue = $_POST["searcher"];
+    $sql = "SELECT * FROM hospede WHERE nome LIKE '%$filterValue%'";
+    $result = $conn->query($sql);
 
     while ($row = $result->fetch_assoc()) {
+
       $numQuarto = $row["numeroQuarto"];
       $nome = $row["nome"];
       $cpf = $row["cpf"];
@@ -66,26 +74,58 @@
       $numDias = $row["numero_de_Dias"];
       $valor = $row["valor"];
 
-      echo "<tr><td>" .$numQuarto."</td>";
-      echo "<td>" .$nome. "</td>";
-      echo "<td>" .$cpf. "</td>";
-      echo "<td>" .$numHospedes. "</td>";
-      echo "<td>" .$numDias. "</td>";
-      echo "<td>" .$valor. "</td>";
-      echo '<td><a href="edit.php?numeroQuarto='.$row["numeroQuarto"].' ">Editar</a></td>';
-      echo '<td><a href="quartos.php?delete='.$row["numeroQuarto"].'">Excluir</a></td></tr>';
-
+              echo "<tr><td>" .$numQuarto."</td>";
+              echo "<td>" .$nome. "</td>";
+              echo "<td>" .$cpf. "</td>";
+              echo "<td>" .$numHospedes. "</td>";
+              echo "<td>" .$numDias. "</td>";
+              echo "<td>" .$valor. "</td>";
+              echo '<td><a href="edit.php?numeroQuarto='.$row["numeroQuarto"].' ">Editar</a></td>';
+              echo '<td><a href="quartos.php?delete='.$row["numeroQuarto"].'">Excluir</a></td></tr>';
+              echo "</tbody></table>";
+              echo "<button type="input";
     }
+
+  } else {
+
+    $sql = "SELECT * FROM hospede";
+
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+
+      while ($row = $result->fetch_assoc()) {
+        $numQuarto = $row["numeroQuarto"];
+        $nome = $row["nome"];
+        $cpf = $row["cpf"];
+        $numHospedes = $row["numero_de_Hospedes"];
+        $numDias = $row["numero_de_Dias"];
+        $valor = $row["valor"];
+
+        echo "<tr><td>" .$numQuarto."</td>";
+        echo "<td>" .$nome. "</td>";
+        echo "<td>" .$cpf. "</td>";
+        echo "<td>" .$numHospedes. "</td>";
+        echo "<td>" .$numDias. "</td>";
+        echo "<td>" .$valor. "</td>";
+        echo '<td><a href="edit.php?numeroQuarto='.$row["numeroQuarto"].' ">Editar</a></td>';
+        echo '<td><a href="quartos.php?delete='.$row["numeroQuarto"].'">Excluir</a></td></tr>';
+
+      }
     echo "</tbody></table>";
-  }
+    }
 
 
-  if(isset($_GET['delete'])){
+    if(isset($_GET['delete'])){
     $sql = "DELETE FROM hospede WHERE numeroQuarto =".$_GET['delete'];
     $sql = mysqli_query($conn, $sql);
   }
 
   $conn->close();
+
+}
+
  ?>
+
   </body>
 </html>

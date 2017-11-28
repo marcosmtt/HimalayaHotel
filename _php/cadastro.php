@@ -59,8 +59,9 @@
 
     <?php
 
-    if( $_SERVER['REQUEST_METHOD'] == 'POST'){
+    include "config.php";
 
+    if( $_SERVER['REQUEST_METHOD'] == 'POST') {
       $name = $_POST["Nome"];
       $cpf = $_POST["Cpf"];
       $numHospedes = $_POST["numeroHospedes"];
@@ -68,15 +69,7 @@
       $valorDiaria = 95.50;
       $valorTotal = ($valorDiaria * $numHospedes) * $numDias;
 
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $dbname = "hotel";
 
-      $conn = new mysqli($servername, $username, $password, $dbname);
-      if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-      }
 
       $sql = "INSERT INTO hospede (nome, cpf, numero_de_Hospedes, numero_de_Dias, valor)
       VALUES ('$name', '$cpf', $numHospedes, $numDias, $valorTotal)";

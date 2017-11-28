@@ -10,11 +10,4 @@
   if ($conn->connect_error) {
     die("Connectoin failed:" . $conn->connect_error);
   }
-
-
-
-
-
-
-
  ?>
