@@ -66,9 +66,8 @@
       $cpf = $_POST["Cpf"];
       $numHospedes = $_POST["numeroHospedes"];
       $numDias = $_POST["numeroDias"];
-      $valorDiaria = 95.50;
+      $valorDiaria = 95.75;
       $valorTotal = ($valorDiaria * $numHospedes) * $numDias;
-
 
 
       $sql = "INSERT INTO hospede (nome, cpf, numero_de_Hospedes, numero_de_Dias, valor)
